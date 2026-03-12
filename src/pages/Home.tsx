@@ -533,10 +533,14 @@ export default function Home({ targetSection }: HomeProps) {
           <Separator className="my-7" />
 
           <div className="flex flex-col gap-2 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
-            <div>© {new Date().getFullYear()} {PLACE.name}. All rights reserved.</div>
+            <div>© {new Date().getFullYear()} {PLACE.name}. Alle Rechte vorbehalten.</div>
             <div>
-              Google rating & opening hours are sourced from the AZEM BISTRO Google Maps listing.
+              Technischer Support:{" "}
+              <a className="underline-offset-4 hover:underline" href="mailto:claritleonelmnicol@gmail.com">
+                claritleonelmnicol@gmail.com
+              </a>
             </div>
+            <div>Google-Bewertung und Öffnungszeiten stammen aus dem AZEM BISTRO Google-Maps-Eintrag.</div>
           </div>
         </div>
       </footer>
