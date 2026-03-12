@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { useTheme } from "@/contexts/ThemeContext";
 import {
   MapPin,
   Phone,
@@ -18,6 +19,8 @@ import {
   Beer,
   Coffee,
   Wine,
+  Sun,
+  Moon,
 } from "lucide-react";
 
 import heroImg from "@/assets/hero-kebab.jpg";
@@ -549,8 +552,23 @@ export default function Home({ targetSection }: HomeProps) {
 }
 
 function Header() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/70 backdrop-blur">
+      <div className="fixed right-3 top-3 z-50 md:right-4 md:top-4">
+        <Button
+          type="button"
+          variant="outline"
+          size="icon"
+          onClick={toggleTheme}
+          aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          className="bg-background/85 backdrop-blur shadow-sm"
+        >
+          {theme === "dark" ? <Sun /> : <Moon />}
+        </Button>
+      </div>
+
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-8">
         <div className="flex items-baseline gap-3">
           <div className="text-lg font-semibold tracking-tight">AZEM BISTRO</div>
