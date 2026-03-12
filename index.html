@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AZEM BISTRO — Berlin</title>
+
+    <meta
+      name="description"
+      content="AZEM BISTRO in Berlin-Mitte — Turkish & German bistro classics. Rathausstraße 17, 10178 Berlin. Open daily 9:00–4:00."
+    />
+
+    <!-- Fonts (distinctive, high-contrast) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Basic OG -->
+    <meta property="og:title" content="AZEM BISTRO — Berlin" />
+    <meta
+      property="og:description"
+      content="Late-night döner, currywurst, beer & coffee — right by Rathausstraße." />
+    <meta property="og:type" content="website" />
+
+    <!-- LocalBusiness schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "AZEM BISTRO",
+        "servesCuisine": ["Turkish", "German"],
+        "priceRange": "€1–10",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rathausstraße 17",
+          "postalCode": "10178",
+          "addressLocality": "Berlin",
+          "addressCountry": "DE"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 52.5180502, "longitude": 13.4071489 },
+        "telephone": "+49 179 4215886",
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday"], "opens": "09:00", "closes": "04:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday"], "opens": "09:00", "closes": "04:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday"], "opens": "09:00", "closes": "04:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday"], "opens": "09:00", "closes": "04:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "09:00", "closes": "04:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "04:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "04:00" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
